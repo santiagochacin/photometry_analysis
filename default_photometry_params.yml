@@ -1,0 +1,23 @@
+encoder_channel: channel_0
+fluorescence_channel_1: channel_3
+in_quad: true
+modulation_channel_1: channel_2
+modulation_channel_2: channel_1
+post_filter_params:
+  filter_type: lowpass
+  highcut: 50
+  order: 4
+pre_filter_params_ch1:
+  filter_type: bandpass
+  highcut: 350
+  lowcut: 150
+  order: 4
+pre_filter_params_ch2:
+  filter_type: bandpass
+  highcut: 650
+  lowcut: 450
+  order: 4
+seconds_to_window: !!python/tuple
+- 10
+- 10
+in_quad: True

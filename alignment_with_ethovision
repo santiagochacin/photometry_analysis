@@ -1,0 +1,24 @@
+
+
+
+
+##alignment steps
+
+# create dataframe of TTL sync pulses with a time column from start of the video
+
+# create dataframe of grooming/behavior information from ethovision file, also with a time column from start of the video
+
+# get the indicies of sync pulses from the abf recording
+
+# form continous array with the intermediate frame numbers between pulses and time stamps to add into the photometry df
+
+# pad the array with zeros at the end of the sweep
+
+# take the photometry data array, and, for each sample point:
+#   1) find the time of the closest frame analyzed by ethovision in the ethovision array
+#	2) get the time of the frame
+#   3) add the grooming/behavior value for this frame to the photometry data
+# by iterating over all the samples in the photometry data file, this will "upsample" the behavior analysis and align it # to the information already in the photometry data for the abf file
+
+
+# fold this back into the original photometry df 
