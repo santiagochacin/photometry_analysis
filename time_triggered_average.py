@@ -148,7 +148,7 @@ def align_on_trigger(df_name, Fs, channel_to_trigger, channels_to_align, amplitu
     elif direction == 'down':
         up = False 
     indicies_from_trigger_channel = return_indicies(df_name, Fs, channel_to_trigger, 
-                                                    amplitude_threshold, time_threshold, window_time, up)
+                                                    amplitude_threshold, time_threshold, window_time, direction)
     
     by_channel_by_sweep = {}
     region_in_samples = int(time_region*Fs)
